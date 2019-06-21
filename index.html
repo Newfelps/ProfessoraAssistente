@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="estilo/style.css">
+        <meta charset="UTF-8">
+        <title>HideWare</title>
+    </head>
+    <body>
+        <section class="logar">
+            <a href="login.html" class="botao">Login</a>
+        </section>
+        
+        <header>
+            <div class="logotipo">
+                <img src="imagens/logo.png">
+            </div>
+        </header>
+        
+        
+            <main>
+                <section class="principal">
+                    <div class="conteudo">
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                            <li><a class="link" onclick="ativarOpcao1()" id="idOpcao1" href="#">LoremIpsum</a></li>
+                            <li><a class="link" onclick="ativarOpcao2()" id="idOpcao2" href="#">LoremIpsum</a></li>
+                            <li><a class="link" onclick="ativarOpcao3()" id="idOpcao3" href="#">LoremIpsum</a></li>
+                        </ul>
+                        
+                    </nav>     
+                </div>
+                <span  id="Op">
+
+                    <div class="assistente">
+                        <article class="desc_assistente">
+                            <h2>Descrição do assistente</h2>
+                                <p>
+                                    Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                                    adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                                    Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                                </p>
+                            </article>
+                            <div class="imagem">
+                                <img src="imagens/mat.png">
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="cursos">
+                            <h2>CURSOS</h2>
+                            <div class="alinhar">
+                                
+                                <article class="desc_cursos">
+                                    <div class="imagem">
+                                        <img src="imagens/mat.png">
+                                    </div>
+                                    <h3>Matemática</h3>
+                                    <p>
+                                        Ped lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                                        adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                                        Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                                    </p>
+                                </article>
+                                
+                                
+                                <article class="desc_cursos">
+                                    <div class="imagem">
+                                        <img src="imagens/por.png">
+                                    </div>
+                                    <h3>Português</h3>
+                                    <p>
+                                        Ped lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                                        adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                                        Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                                    </p>
+                                </article>
+                                
+                                
+                                <article class="desc_cursos">
+                                    <div class="imagem">
+                                        <img src="imagens/alg.png">
+                                    </div>
+                                    <h3>Algoritmos</h3>
+                                    <p>
+                                        Ped lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                                        adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                                        Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                                    </p>
+                                </article>
+                                
+                            </div>
+                            
+                            <hr></hr>
+                            
+                            <div class="resultados">
+                                <h2>Resultados Esperados</h2>
+                                <p>    
+                                    Ped lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                                    adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                                    Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                                </p>
+                                <div class="imagem">
+                                    <img src="imagens/res.png">
+                                </div>
+                            </div>
+
+                        </div>
+                                
+                        
+                    </div>
+                </span>
+                    
+                
+                </section>
+        </main>
+        
+        
+        
+        <footer>
+            <div class="descricao">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                    Ped lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                    adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                    Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                </p>
+            </div>
+            
+            <div class="descricao">
+                <h3>Lorem Ipsum</h3>    
+                <p>
+                    Ped lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                    adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursos.
+                    Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+        var link1 = document.getElementById("idOpcao1");
+        var link2 = document.getElementById("idOpcao2");
+        var link3 = document.getElementById("idOpcao3");
+        
+        function ativarOpcao1(){
+            link1.classList.add("ativo");
+            link1.classList.remove("link");
+            
+            link2.classList.remove("ativo");
+            link2.classList.add("link");
+            
+            link3.classList.remove("ativo");
+            link3.classList.add("link");
+        }
+        function ativarOpcao2(){
+            
+            link1.classList.remove("ativo");
+            link1.classList.add("link");
+            
+            link2.classList.add("ativo");
+            link2.classList.remove("link");
+            
+            link3.classList.remove("ativo");
+            link3.classList.add("link");  
+        }
+        function ativarOpcao3(){
+            link1.classList.remove("ativo");
+            link1.classList.add("link");
+            
+            link2.classList.remove("ativo");
+            link2.classList.add("link");
+            
+            link3.classList.add("ativo");
+            link3.classList.remove("link");            
+        }
+        </script>
+</body>
+</html>
